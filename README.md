@@ -9,9 +9,9 @@ Due to how matplotlib coordinates work, rows and columns may mean the opposite o
 The algorithm is as follows:
 - draw the side walls, with two entrances.
 - repeat(
-        - choose a random node which is the end of a wall segment
-        - find a neighbouring node which does not touch any wall segment
-        - draw a new wall segment between the two)
+        1. choose a random node which is the end of a wall segment
+        2. find a neighbouring node which does not touch any wall segment
+        3. draw a new wall segment between the two)
   until every node is the end of a wall segment.
   
 I believe the implementation is reasonably efficient, with the very notable exception of everything matplotlib.
