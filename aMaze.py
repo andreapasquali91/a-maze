@@ -1,4 +1,7 @@
-#This program generates and draws a rectangular maze, with an entrance on one side and one on the opposite side. The walls have two connected components, and there is one (and only one) way from one entrance to the other. To run the program, change "rows" and "columns" as desired inside main(), and interpret using python3. Due to how matplotlib coordinates work, rows and columns may mean the opposite of what you think.
+#This program generates and draws a rectangular maze, with an entrance on one side and one on the opposite side.
+The walls have two connected components, and there is one (and only one) way from one entrance to the other.
+To run the program, change "rows" and "columns" as desired inside main(), and interpret using python3.
+Due to how matplotlib coordinates work, rows and columns may mean the opposite of what you think.
 
 import matplotlib.pyplot as plt
 import random
