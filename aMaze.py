@@ -88,7 +88,7 @@ def Fill(table,rows,columns,fullList):
 				#now the endpoint of the new wall is the new node we start from
 				table[nei[0]][nei[1]] = 1
 				fullList.append(nei)
-				counter=counter+1
+				counter+=1
 				node = nei
 			else:
 				#remove node from full list if it has no empty neighbours
