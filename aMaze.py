@@ -77,7 +77,7 @@ def Fill(table,rows,columns,fullList):
 	#total number of walls added will be
 	while counter < (rows-2)*(columns-2):
 		#choose a random full node
-		index = random.randint(0,len(fullList)-1)
+		index = random.randrange(len(fullList)-1)
 		node = fullList[index]
 		while True:
 			nei = FindEmptyNeighbour(node,table,rows,columns)
@@ -97,8 +97,8 @@ def Fill(table,rows,columns,fullList):
 				break
 
 def main():
-	columns = 200
-	rows = 150
+	columns = 100
+	rows = 80
 	table,fullList=GenTable(rows,columns)
 	DrawSideWalls(rows, columns)
 	Fill(table,rows,columns,fullList)
