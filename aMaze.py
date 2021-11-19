@@ -71,7 +71,7 @@ def FindEmptyNeighbour(node,table,rows,columns):
 	return False
 
 #main loop. We keep adding walls connecting a random non-empty node to a random empty neighbour.
-#We keep a list of noeds which have a wall (to pick at random from), and remove from it the nodes which have no empty neighbours.
+#We keep a list of nodes which have a wall (to pick at random from), and remove from it the nodes which have no empty neighbours.
 def Fill(table,rows,columns,fullList):
 	counter=0
 	#total number of walls added will be
