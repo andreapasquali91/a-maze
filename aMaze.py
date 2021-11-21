@@ -77,7 +77,7 @@ def Fill(table,rows,columns,fullList):
 	#total number of walls added will be
 	while counter < (rows-2)*(columns-2):
 		#choose a random full node
-		index = random.randrange(len(fullList)-1)
+		index = random.randrange(len(fullList))
 		node = fullList[index]
 		while True:
 			nei = FindEmptyNeighbour(node,table,rows,columns)
